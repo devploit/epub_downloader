@@ -1,0 +1,37 @@
+:root { color-scheme: light; font: 16px/1.6 system-ui, sans-serif; color: #253e35; background: #f4f3ed; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 860px; margin: auto; padding: 36px 32px; }
+header { display: flex; align-items: center; gap: 12px; font-weight: 650; }
+.mark { width: 36px; height: 36px; flex-shrink: 0; }
+.badge { margin-left: auto; font-size: 10px; letter-spacing: 1.3px; border: 1px solid #b8c5b8; border-radius: 20px; padding: 4px 10px; }
+.intro { padding: 58px 0 25px; max-width: 650px; }
+.eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 1.9px; color: #526c52; }
+h1 { font: 58px/1.08 Georgia, serif; letter-spacing: -1.8px; margin: 20px 0; }
+h1 span { color: #65785d; }
+.intro > p:last-child { color: #57655b; max-width: 565px; }
+.card { padding: 28px; border: 1px solid #d4dbce; background: #fffefa; border-radius: 16px; box-shadow: 0 8px 30px #28483205; }
+h2 { font-size: 21px; margin: 0 0 22px; font-weight: 600; }
+label { display: block; font-size: 13px; font-weight: 650; margin-bottom: 8px; }
+input { width: 100%; border: 1px solid #aab8a5; border-radius: 7px; background: white; color: #253e35; padding: 14px; font: inherit; font-size: 14px; }
+.hint { font-size: 12px; color: #5b695e; margin: 9px 0 22px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+button { border: 1px solid #315c47; border-radius: 7px; padding: 11px 20px; background: #315c47; color: white; font: 600 13px/1.5 system-ui, sans-serif; cursor: pointer; }
+button span { margin-left: 36px; font-size: 17px; }
+button:hover { background: #254b38; }
+button.secondary { background: transparent; color: #315c47; border-color: #aebaaa; }
+button.secondary:hover { background: #edf1e9; }
+button:disabled { opacity: .55; cursor: default; }
+:focus-visible { outline: 3px solid #be7e28; outline-offset: 3px; }
+[hidden] { display: none !important; }
+#status-panel { border-top: 1px solid #dde2d6; margin-top: 26px; padding-top: 22px; }
+.status-heading { display: flex; justify-content: space-between; font-size: 13px; font-weight: 650; }
+progress { width: 100%; height: 8px; accent-color: #315c47; }
+#status, #error { font-size: 13px; overflow-wrap: anywhere; white-space: pre-wrap; }
+#verification { padding: 16px; background: #f7f0da; border-radius: 8px; margin: 16px 0; font-size: 13px; }
+#verification p { margin-top: 0; }
+#error { color: #912c22; padding: 12px; background: #fff0e9; border-radius: 6px; }
+aside { font-size: 12px; margin: 23px 2px; color: #596658; max-width: 620px; }
+aside p { margin-top: 4px; }
+footer { display: flex; justify-content: space-between; gap: 20px; margin-top: 55px; border-top: 1px solid #d8ddcf; padding-top: 16px; font-size: 11px; color: #596658; }
+@media (max-width: 560px) { main { padding: 24px 18px; } .intro { padding-top: 36px; } h1 { font-size: 44px; } .card { padding: 20px; } .badge { display: none; } footer { flex-direction: column; gap: 4px; } }

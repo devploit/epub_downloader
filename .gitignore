@@ -1,0 +1,16 @@
+# Local dependencies and generated artifacts
+node_modules/
+test-results/
+playwright-report/
+dist/
+downloaded_epubs/
+__pycache__/
+*.pyc
+
+# Local configuration
+.env
+.env.*
+.venv/
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EPUB Downloader by devploit</title>
+  <link rel="icon" type="image/png" href="icons/icon-32.png">
+  <link rel="stylesheet" href="app.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <header><img class="mark" src="icons/logo.svg" width="36" height="36" alt=""><span>EPUB Downloader</span><span class="badge">BROWSER EDITION</span></header>
+    <section class="intro">
+      <p class="eyebrow">FROM YOUR BROWSER TO YOUR BOOKSHELF</p>
+      <h1>A book to keep.<br><span>Ready for offline.</span></h1>
+      <p>Paste an epub.pub link. Download the chapters, cover and styles together in one EPUB, using your browser session.</p>
+    </section>
+    <section class="card" aria-labelledby="download-heading">
+      <h2 id="download-heading">Save an EPUB</h2>
+      <form id="download-form">
+        <label for="book-url">Book or reader URL</label>
+        <input id="book-url" name="url" type="url" required placeholder="https://www.epub.pub/book/…" autocomplete="off" spellcheck="false" aria-describedby="url-hint">
+        <p id="url-hint" class="hint">Accepts book pages, Read Online links and expanded .epub archive URLs.</p>
+        <div class="actions">
+          <button type="submit" id="start">Download EPUB <span aria-hidden="true">↓</span></button>
+          <button type="button" class="secondary" id="cancel" hidden>Cancel</button>
+        </div>
+      </form>
+      <div id="status-panel" hidden>
+        <div class="status-heading"><span id="phase">Preparing</span><span id="count"></span></div>
+        <progress id="progress" aria-label="Download progress"></progress>
+        <p id="status" role="status" aria-live="polite"></p>
+        <div id="verification" hidden>
+          <p>Your download is paused. Complete any verification in the source tab, then return here.</p>
+          <div class="actions"><button type="button" class="secondary" id="open-source">Open source tab ↗</button><button type="button" id="resume">Resume download</button></div>
+        </div>
+        <p id="error" role="alert" hidden></p>
+        <div class="actions"><button type="button" id="save" hidden>Save EPUB…</button><button type="button" class="secondary" id="show-file" hidden>Show saved file</button></div>
+      </div>
+    </section>
+    <aside><strong>Keep this tab open while downloading.</strong><p>If the site asks for verification, you can complete it in a normal browser tab and resume here. Files are assembled locally.</p></aside>
+    <footer>EPUB Downloader <span>A project by devploit.</span></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "epub-downloader-browser",
+  "author": "devploit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "check": "node scripts/check.mjs",
+    "package": "python3 scripts/package.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
