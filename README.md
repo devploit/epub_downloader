@@ -171,6 +171,10 @@ the type of URL used, the displayed error and steps to reproduce the issue.
 Avoid including cookies or other session data. For code changes, run the checks
 above and add a regression test when fixing a bug.
 
+## Acknowledgements
+
+This project uses [mcombeau/epub_downloader](https://github.com/mcombeau/epub_downloader) by Mia Combeau as a reference.
+
 ## License
 
 Created and maintained by **devploit**. Distributed under the [MIT license](LICENSE).
