@@ -173,4 +173,4 @@ above and add a regression test when fixing a bug.
 
 ## License
 
-Maintained by **devploit**. Distributed under the [MIT license](LICENSE).
+Created and maintained by **devploit**. Distributed under the [MIT license](LICENSE).
